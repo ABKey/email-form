@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+    </header>
+    <main>
+      <h1>Contact me</h1>
+      <form action="process-form.js" method="post">
+        <fieldset>
+          <div class="parent">
+            <label for="firstname">First Name:</label>
+            <input id="firstname" type="text" name="firstname" autofocus="on" maxlength=100 placeholder="John" required/>
+          </div>
+          <div class="parent">
+            <label for="lastname">Last Name:</label>
+            <input id="lastname" type="text" name="lastname" maxlength=100 placeholder="Doe"/>
+          </div>
+          <div class="parent">
+            <label for="email">Email:</label>
+            <input id="Email" type="text" name="Email" maxlength=100 placeholder="johndoe@gmail.com" required/>
+          </div>
+          <div class="parent">
+            <label for="msg">Message:</label>
+            <textarea id="form-message" type="text" name="message" placeholder="Type your message here!" required></textarea>
+          </div>
+          <div class="parent">
+            <button type="submit">SUBMIT</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
